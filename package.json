@@ -2,6 +2,7 @@
   "name": "grunt-filerev",
   "version": "2.2.0",
   "description": "Asset revisioning by using file content hashing",
+  "private": true,
   "keywords": [
     "gruntplugin",
     "optimize",
