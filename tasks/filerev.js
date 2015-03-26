@@ -44,7 +44,7 @@ module.exports = function (grunt) {
         }
 
         var dirname;
-        var hash = crypto.createHash(options.algorithm).update(fs.readFileSync(file)).digest('hex');
+        var hash = crypto.createHash(options.algorithm).update(new Date().getTime().toString()).digest('hex');
         var suffix = hash.slice(0, options.length);
         var ext = path.extname(file);
         var newName;
